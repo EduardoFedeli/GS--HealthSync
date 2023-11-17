@@ -1,0 +1,15 @@
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    border: 2px solid #333; 
+  
+    & a {
+      color: rgb(241, 2, 82);
+      font-size: 1.5em;
+      padding: 15px;
+    }
+  }
