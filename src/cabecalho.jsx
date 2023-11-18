@@ -1,8 +1,11 @@
-export default function Cabecalho(){
+import Logo from '../src/Imagens/LogoSemFundo.png'; 
 
-    return(
-        <footer>
-            <h1 className='footer'>&copy; 2023 CleanWave. Todos os direitos reservados</h1>
-        </footer>
-    )
+import './styles/style.scss';
+
+export default function Cabecalho() {
+    return (
+        <div className="cabecalho">
+            <img src={Logo} alt="Descrição da imagem" className="imagem-centralizada" />
+        </div>
+    );
 }

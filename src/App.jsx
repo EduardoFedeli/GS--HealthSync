@@ -1,4 +1,3 @@
-import Menu from './menu'
 import './styles/style.scss'
 import './cabecalho'
 import Cabecalho from './cabecalho'
@@ -11,10 +10,7 @@ function App() {
     return(
         <>
             <Cabecalho />
-            <Menu />
             <Outlet />
-            
-            
         </>
     )
 }

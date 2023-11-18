@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 import App from './App'
-import Home from './routes/Home/home'
+import Login from './routes/Login/login'
 import Error from './routes/Error/error'
 import Logout from './routes/Logout/logout'
-import Sobre from './routes/Sobre/sobre'
+import Menu from './menu'
+import Home from './routes/Home/home'
+
 
 
 
@@ -17,6 +19,10 @@ const router = createBrowserRouter([
     children: [
     {
       path: "/",
+      element: <Login />
+    },
+    {
+      path: "/home",
       element: <Home />
     },
     {
@@ -24,8 +30,8 @@ const router = createBrowserRouter([
       element: <Logout />
     },
     {
-      path: "/sobre",
-      element: <Sobre />
+      path: "/menu",
+      element: <Menu />
     },
     {
       path: "/antiga",
